@@ -14,9 +14,8 @@
           <em>( 0 )</em>
         </a>
         <div class="cart-menu">
-            <div class="content">购物车中还没有商品，赶紧选购吧！</div>
+          <div class="content">购物车中还没有商品，赶紧选购吧！</div>
         </div>
-
       </div>
       <div class="topbar-info"></div>
     </div>
@@ -79,6 +78,7 @@ $btn-Color: #424242;
       line-height: 40px;
       text-align: center;
       background-color: $btn-Color;
+      transition: all .1s .1s;
       em {
         font-style: normal;
       }
@@ -98,27 +98,27 @@ $btn-Color: #424242;
       }
     }
     .cart-menu {
-        position: absolute;
-        right: 0;
-        top: 40px;
-        width: 316px;
-        box-shadow: 0 2px 10px rgba($color: #000000, $alpha: .15);
-        background-color: #fff;
-        color:$btn-Color;
-        overflow: hidden;
-        transition: height .3s;
-        height: 0;
-        .content {
-            text-align: center;
-            line-height: 100px;
-        }
+      position: absolute;
+      right: 0;
+      top: 40px;
+      width: 316px;
+      box-shadow: 0 2px 10px rgba($color: #000000, $alpha: 0.15);
+      background-color: #fff;
+      color: $btn-Color;
+      overflow: hidden;
+      transition: all .3s .1s;
+      height: 0;
+      .content {
+        text-align: center;
+        line-height: 100px;
+      }
     }
-    &:hover .cart-menu{
-        height: 100px;
+    &:hover .cart-menu {
+      height: 100px;
     }
     &:hover .cart-btn {
-        color: $sub-tColor;
-        background-color: #fff;
+      color: $sub-tColor;
+      background-color: #fff;
     }
   }
 }
