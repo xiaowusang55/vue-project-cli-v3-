@@ -2,14 +2,16 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import VueAwesomeSwiper from "vue-awesome-swiper"
 
-import swipertemp from './components/swiper-basic.vue'
-import "../node_modules/swiper/dist/css/swiper.css"
+//swiper global regiteratoin start
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import swiperBasic from './components/swiper-basic.vue'
 
-Vue.use(VueAwesomeSwiper)
+import '../node_modules/swiper/dist/css/swiper.css'
 
-Vue.component('glb-swiper', swipertemp)
+Vue.use(VueAwesomeSwiper, swiperBasic)
+//swiper global regiteratoin end
+
 
 Vue.config.productionTip = false
 

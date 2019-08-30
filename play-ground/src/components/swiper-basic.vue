@@ -13,15 +13,12 @@
     <div class="swiper-button-prev" slot="button-prev"></div>
     <div class="swiper-button-next" slot="button-next"></div>
     <div class="swiper-scrollbar" slot="scrollbar"></div>
-
-
   </swiper>
 </template>
 
 <script>
 
 export default {
- 
   data() {
     return {
       swiperOption: {
@@ -50,44 +47,7 @@ export default {
     swiper() {
       return this.$refs.mySwiper.swiper;
     }
-  },
-  // beforeCreate() {
-  //   console.log("beforeCreate:");
-  //   console.log(this.swiperOption);
-  //   console.log(this.$refs.mySwiper);
-  //   console.log("===============");
-  // },
-  // created() {
-  //   console.log("create:");
-  //   console.log(this.swiperOption);
-  //   console.log(this.$refs.mySwiper);
-  //   console.log("===============");
-  // },
-  // beforeMount() {
-  //   console.log("beforeMount:");
-  //   console.log(this.swiperOption);
-  //   console.log(this.$refs.mySwiper);
-  //   console.log("===============");
-  // },
-  // mounted() {
-  //   console.log("mounted:");
-  //   console.log(this.swiperOption);
-  //   console.log(this.$refs.mySwiper);
-  //   console.log("===============");
-  //   console.log(this.$root.$refs);
-  // },
-  // beforeUpdate() {
-  //   console.log("beforeUpdate:");
-  //   console.log(this.swiperOption);
-  //   console.log(this.$refs.mySwiper);
-  //   console.log("===============");
-  // },
-  // updated() {
-  //   console.log("updated:");
-  //   console.log(this.swiperOption);
-  //   console.log(this.$refs.mySwiper);
-  //   console.log("===============");
-  // }
+  }
 };
 </script>
 
